@@ -1,0 +1,371 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* Navigation */
+
+nav{
+    background:#222;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+}
+
+.nav-links a:hover{
+    color:#00bfff;
+}
+
+/* Sections */
+
+
+section{
+    padding:80px 8%;
+    text-align:center;
+}
+
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+
+}
+
+.left,
+.right{
+    width:50%;
+    padding:30px;
+}
+
+.left img{
+    width:100%;
+    max-width:450px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.right h1{
+    font-size:50px;
+    margin-bottom:30px;
+}
+
+.right h2{
+    letter-spacing:3px;
+    color:#0077cc;
+    margin-bottom:20px;
+}
+
+.right p{
+    font-size:22px;
+    line-height:40px;
+    font-size:20px;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:30px;
+
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 30px;
+    background:black;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+
+.vbtn{
+    background:black;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing:border-box;
+    margin:10px;
+}
+
+
+.vbtn:hover{
+    background:#005fa3;
+}
+
+/* Skills */
+
+.skills{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:black;
+    color:white;
+    padding:20px;
+    width:150px;
+    border-radius:10px;
+    box-shadow:0 0 10px lightgray;
+}
+
+#about h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.aboutp p{
+    text-align:justify;
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+    margin-top:10px;
+}
+
+/* Projects */
+
+.project-container{
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.project-card{
+    background:black;
+    color: white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px lightgray;
+}
+
+/* Contact */
+
+form{
+    max-width:500px;
+    margin:auto;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin:15px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#222;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#005fa3;
+}
+
+
+#todo{
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todocontainer{
+    width: 450px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.todocontainer h2{
+    margin-bottom: 25px;
+    color:#0077cc;
+}
+
+.input-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.input-box input{
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #0077cc;
+    border-radius: 8px;
+    outline: none;
+}
+
+.input-box button{
+    padding: 10px 18px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.input-box button:hover{
+    background: #005fa3;
+}
+
+#taskList{
+    list-style: none;
+    padding: 0;
+}
+
+.productbtn{
+    background:black;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:5px;
+}
+
+.productbtn:hover{
+    background:#005fa3;
+}
+
+#taskList li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #f4f4f4;
+    border-radius: 8px;
+}
+
+.task-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.task-buttons button{
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+}
+.contact-details{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-top:5px;
+    margin-bottom:30px;
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:18px;
+    font-weight:500;
+}
+
+.contact-item a{
+    text-decoration:none;
+    color:#333;
+}
+
+.contact-item a:hover{
+    color:#0077cc;
+}
+
+
+
+/* Tablet */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .project-container{
+        grid-template-columns:1fr;
+    }
+}
+
+/* Mobile */
+
+@media(max-width:480px){
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .logo{
+        font-size:22px;
+    }
+}

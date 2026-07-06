@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:linear-gradient(135deg,#74ebd5,#9face6);
+    min-height:100vh;
+    padding:40px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    color:white;
+    margin-bottom:40px;
+}
+
+.controls{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:40px;
+}
+
+.controls input,
+.controls select,
+.controls button{
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.controls input,
+.controls select{
+    width:220px;
+}
+
+.controls button{
+    background:#0077cc;
+    color:white;
+    cursor:pointer;
+}
+
+.controls button:hover{
+    background:#005fa3;
+}
+
+#productContainer{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 15px gray;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+    text-align:center;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+}
+
+.card-content p{
+    margin-bottom:10px;
+}
+
+.card-content button{
+    background:#0077cc;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.card-content button:hover{
+    background:#005fa3;
+}
+#cartItems{
+    background:white;
+    margin-top:20px;
+    padding:20px;
+    border-radius:15px;
+}
+
+.cart-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+.cart-card button{
+    background:red;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+#totalBill{
+    margin-top:20px;
+    text-align:right;
+    color:white;
+    font-size:24px;
+}
+#cbutton{
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+}
+#cbutton{
+    background:#0077cc;
+    color:white;
+    cursor:pointer;
+}
+#cbutton:hover{
+    background:#005fa3;
+}

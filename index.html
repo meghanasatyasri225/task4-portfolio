@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meghana's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Meghana's Portfolio</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#todo">To-Do App</a></li>
+            <li><a href="#products">Product Listing App</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+
+        <div class="left">
+        <img src="profile.jpeg" alt="Profile">
+        </div>
+
+        <div class="right">
+        <h1>Hello, I'm Meghana 👋</h1>
+        <h2>MCA Student | Frontend Developer</h2>
+
+        <p>
+            Passionate about creating responsive and interactive
+            web applications using HTML, CSS and JavaScript.
+        </p>
+         <a href="Kollati_Meghana_Satya_Sri_Resume_2026-07-04.pdf" class="btn">
+            Download Resume
+        </a>
+        </div>
+    </section>
+
+    <section>
+            <a href="#projects" class="vbtn">View Projects</a>
+    </section>
+    
+
+    <!-- About -->
+    <section id="about" class="aboutp">
+
+        <h1>About Me</h1>
+
+        <p>
+            I am pursuing Master of Computer Applications (MCA) and have a strong interest in Web Development and
+            Software Development with a strong foundation in programming. Skilled in HTML, CSS, JavaScript, and VB.NET, with hands-on
+            experience in developing academic projects and solving technical problems. A quick learner with excellent
+            communication, teamwork, and problem-solving abilities, seeking an opportunity to apply and enhance my
+            technical skills in the IT industry.
+
+        </p>
+
+        <div class="skills">
+
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">JavaScript</div>
+            <div class="card">Java</div>
+            <div class="card">VB.NET</div>
+            <div class="card">SQL</div>
+            <div class="card">Git & GitHub</div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h1>Projects</h1>
+        <div class="project-container">
+            
+            <div class="project-card">
+                <h3>Travel Explorer Website</h3>
+                <p>
+                    Responsive travel website with gallery,
+                    quiz and API integration.
+                </p>
+            </div>
+
+
+            <div class="project-card">
+                <h3>Agriculture Management System</h3>
+                <p>
+                    Crop selection, inventory and field
+                    management system.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Eco-Friendly Bags Management System</h3>
+                <p>
+                    Product inventory and customer
+                    management system.
+                </p>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section id="todo">
+        <div class="todocontainer">
+        <h2>📝 My To-Do List</h2>
+
+        <div class="input-box">
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Enter a task">
+
+        <button onclick="addTask()">
+            Add Task
+        </button>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <section id="products">
+        <h2>🛍 My Products Store</h2>
+
+        <a href="products.html" class="productbtn">Product Listing App</a>
+        </section>
+        </div>
+        <script src="todo.js"></script>
+        
+    </section>
+
+    
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h1>Contact Me</h1>
+
+        <form>
+
+            <input
+                type="text"
+                placeholder="Your Name"
+                required>
+
+            <input
+                type="email"
+                placeholder="Your Email"
+                required>
+
+            <textarea>
+                rows="5"
+                placeholder="Your Message"></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+    <section class="contact-details">
+
+    <div class="contact-item">
+        📧
+        <a href="meghanasatyasri225@gmail.com" target="_blank">
+            meghanasatyasri225@gmail.com
+        </a>
+    </div>
+
+    <div class="contact-item">
+        📞
+        <span>9908832676</span>
+    </div>
+
+    <div class="contact-item">
+        💼
+        <a href="https://www.linkedin.com/in/your-linkedin-id/"
+           target="_blank">
+            LinkedIn_meghana
+        </a>
+    </div>
+
+    <div class="contact-item">
+        💻
+        <a href="https://github.com/meghanasatyasri225"
+           target="_blank">
+            Github_meghanasatyasri
+        </a>
+    </div>
+
+</section>
+
+</body>
+</html>
